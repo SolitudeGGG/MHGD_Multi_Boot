@@ -29,9 +29,9 @@ parameter mu = 4;
 parameter mu_2 = 16;
 parameter iter = 10;
 parameter sampler_num = 4;
-parameter TOTAL_WIDTH = 32;
-parameter INT_WIDTH = 8;
-parameter FRAC_WIDTH = TOTAL_WIDTH - INT_WIDTH;
+parameter TOTAL_WIDTH = `IN_WIDTH;
+parameter INT_WIDTH = `IN_WIDTH - `IN_FRAC;
+parameter FRAC_WIDTH = `IN_FRAC;
 
 reg i_clk;
 reg i_rst;
